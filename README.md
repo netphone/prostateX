@@ -26,7 +26,12 @@ python save_img_patches.py
 python std.py
 python std_ktrans.py
 ```
-
+#### 5. Integrate lossse.py (for focal loss function) and transforms.py (for image augmentation) into train.py
+- Integrate DenseNet model and training procedure
+- read arguments externally.
+```
+python train.py args
+```
 #### Model Architecture
 - Aligning MRI images retrieved from T2W, ADC, DWI, and Ktrans modalities according to the clinical lesions’ coordinates, followed by image stacking.
 
