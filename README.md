@@ -19,12 +19,12 @@ python Image_Patch_Generation_revWktrans.py --working-folder='./raw data' -p '(7
 to create subfolders associated with patch sizes under img_patches (and img_ktrans_patches) folders
 - save associated patch-sized .npy files and corrospoinding patch-sized info in the particular patch-size subfolder.
 ```
-python save_img_patches.py
+python ./data/save_img_patches.py
 ```
 #### 4. Calculate averages and stds, save standarized data and recheck the numbers
 ```
-python std.py
-python std_ktrans.py
+python ./data/std.py
+python ./data/std_ktrans.py
 ```
 #### 5. Integrate lossse.py (for focal loss function) and transforms.py (for image augmentation) into train.py
 - Integrate DenseNet model and training procedure
